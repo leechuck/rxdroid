@@ -24,6 +24,8 @@ package at.jclehner.rxdroid.db;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.util.UUID;
+
 @DatabaseTable(tableName = "patients")
 public class Patient extends Entry implements Comparable<Patient>
 {
@@ -33,7 +35,8 @@ public class Patient extends Entry implements Comparable<Patient>
 	private String name;
 
 	public Patient() {
-		id = DEFAULT_PATIENT_ID;
+		this.name = UUID.randomUUID().toString();
+        id = DEFAULT_PATIENT_ID;
 	}
 
 	public void setName(String name) {

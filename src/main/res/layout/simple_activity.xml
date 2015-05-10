@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/activity_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView android:id="@android:id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@android:id/text1"
+            android:layout_below="@android:id/text1"
+            android:layout_toLeftOf="@id/btn_menu"
+            android:layout_alignWithParentIfMissing="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Do you experience headache?" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="?attr/buttonBarStyle">
+         <Button android:id="@+id/btn_left"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:maxWidth="200dip"
+            android:text="no"
+            style="?attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/btn_right"
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:maxWidth="200dip"
+            android:text="yes"
+            style="?attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -80,5 +80,5 @@
 	  		android:focusable="true"
 	  		android:onClick="onDoseViewClick"
 	  	/>
-	  		
+
 	  </LinearLayout>

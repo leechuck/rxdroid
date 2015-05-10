@@ -5,6 +5,7 @@
     android:orientation="horizontal"
     android:padding="8dip"
 >
+
     <LinearLayout android:id="@+id/day_container"
         android:layout_width="48dip"
         android:layout_height="match_parent"
@@ -31,5 +32,6 @@
              android:layout_height="@dimen/dose_view_height"
              android:layout_width="match_parent"
             />
+
 
 </LinearLayout>

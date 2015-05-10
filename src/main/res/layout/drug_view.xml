@@ -245,6 +245,8 @@
 		  		android:layout_height="48dip"
 		  		android:layout="@layout/stub_low_supply_indicator"
 		  	/>  
-		  	  -->		
-	  	</LinearLayout>    
+		  	  -->
+
+	  	</LinearLayout>
+
 </RelativeLayout>

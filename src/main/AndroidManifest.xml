@@ -7,8 +7,9 @@
 	<uses-permission android:name="android.permission.VIBRATE" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-	<uses-configuration android:reqTouchScreen="stylus" />
+    <uses-configuration android:reqTouchScreen="stylus" />
 	<uses-configuration android:reqTouchScreen="finger" />
 
 	<uses-feature android:name="android.hardware.vibrate" android:required="false" />
